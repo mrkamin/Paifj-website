@@ -13,10 +13,10 @@ const Header = () => {
     <div className="container paddingSmall">
         <nav>
             <ul className={navbar ? "navbar" : "flex"} onClick={() => setNavbar(false)}>
-                <li><Link to='/'>GET INFORMED</Link></li>
-                <li><Link to='/'>OUR ACTIONS</Link></li>
-                <li><Link to='/'>GET INVOLVED</Link></li>
-                <li><Link to='/'>ABOUT US</Link></li>
+                <li><Link to='/getinformed'>GET INFORMED</Link></li>
+                <li><Link to='/ouractions'>OUR ACTIONS</Link></li>
+                <li><Link to='/getinvolved'>GET INVOLVED</Link></li>
+                <li><Link to='/aboutus'>ABOUT US</Link></li>
                 <li className='makeDonation'><Link to='/'>MAKE A DONATION</Link></li>
             </ul>
             <button className='barIcon' onClick={() => setNavbar(!navbar)}>

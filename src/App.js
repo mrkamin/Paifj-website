@@ -1,16 +1,17 @@
 import React from 'react'
 import Header from './components/common/header/Header'
 import "./App.css";
-import { BrowserRouter as Router, /* Switch, Route  */} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Homepages from "./components/home/Homepages";
 
 const App = () => {
   return (
     <>
     <Router>
     <Header />
-      
-      {/* <Route path='/' component={Homepages} /> */}
-      
+      <Routes>
+      <Route index element={<Homepages />} /> 
+      </Routes>
     </Router>
     
     </>
