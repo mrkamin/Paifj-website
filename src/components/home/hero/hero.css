@@ -1,28 +1,27 @@
 .hero {
     margin: 30px 0;
-    color: #fff;
+    color: #000000;
   }
   .hero a {
-    color: #fff;
+    color: #000000;
   }
   .hero .box {
-    position: relative;
+   
     padding: 30px;
   }
   .hero img {
     width: 100%;
-    height: 100%;
+    height: 50%;
     object-fit: cover;
-    position: absolute;
+   
     top: 0;
     left: 0;
     z-index: -1;
   }
   .hero .container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 6.6vh);
-    grid-gap: 10px;
+    
+    grid-gap: 1px;
   }
   .hero .box:nth-child(1) {
     grid-column-start: 1;
@@ -34,18 +33,18 @@
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 3;
   }
   .hero .box:nth-child(3) {
     grid-column-start: 5;
     grid-column-end: 7;
-    grid-row-start: 5;
+    grid-row-start: 4;
     grid-row-end: 9;
   }
   .hero .box:nth-child(4) {
     grid-column-start: 7;
     grid-column-end: 9;
-    grid-row-start: 5;
+    grid-row-start: 4;
     grid-row-end: 9;
   }
   .hero .text h1 {
@@ -58,7 +57,7 @@
     margin-right: 20px;
   }
   .hero .text {
-    position: absolute;
+    
     bottom: 30px;
   }
   .hero .box:nth-child(1) h1 {
@@ -76,9 +75,8 @@
   @media screen and (max-width: 768px) {
     .hero .container {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(18, 6vh);
-      grid-gap: 10px;
+      
+      grid-gap: 1px;
     }
     .hero .box:nth-child(1) {
       grid-column-start: 1;
