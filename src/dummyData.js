@@ -452,3 +452,4 @@ export const discover = [
     cover: "../images/discover/d6.jpg",
   },
 ]
+

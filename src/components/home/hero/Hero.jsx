@@ -4,7 +4,7 @@ import "./hero.css"
 import Card from "./Card"
 
 const Hero = () => {
-  const [items, setIems] = useState(hero)
+  const [items, ] = useState(hero)
 
   return (
     <>
