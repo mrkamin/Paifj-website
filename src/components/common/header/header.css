@@ -1,0 +1,71 @@
+.head {
+    cursor: pointer;
+  }
+  .head .logo img {
+    width: 160px;
+    height: 100px;
+  }
+  header {
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+  }
+  header li {
+    margin-right: 30px;
+    transition: 0.5s;
+  }
+  header li:hover {
+    color: crimson;
+    cursor: pointer;
+  }
+  header a {
+    color: #fff;
+  }
+  .barIcon {
+    font-size: 25px;
+    background: none;
+    color: #fff;
+    display: none;
+    border: none;
+  }
+  .makeDonation {
+    background-color: crimson;
+    border: none;
+    border-radius: 2rem;
+    padding: 3px 10px;
+  }
+  @media screen and (max-width: 768px) {
+    .head .ad {
+      display: none;
+    }
+    header .icon {
+      display: none;
+    }
+    header .flex {
+      display: none;
+    }
+    .barIcon {
+      display: block;
+    }
+    header .navbar {
+      position: absolute;
+      display: block;
+      background-color: #000000;
+      left: 0;
+      top: 29%;
+      transition: 0.5s;
+      width: 50%;
+      height: 50vh;
+      z-index: 5;
+      padding: 20px;
+    }
+    header .navbar {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    header ul li {
+      margin-bottom: 30px;
+    }
+  }
