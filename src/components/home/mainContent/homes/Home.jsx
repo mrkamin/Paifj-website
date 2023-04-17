@@ -1,5 +1,4 @@
 import React from "react"
-/* import Discover from "../../discover/Discover"  */
 import Side from "../../sideContent/side/Side" 
 import Life from "../life/Life"
 import Music from "../musics/Music"

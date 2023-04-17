@@ -36,12 +36,12 @@ export const hero = [
   },
   {
     id: 2,
-    cover: "../images/hero/hero2.jpg",
+    cover: "../images/hero/Husain_Naderi_2.jpeg",
     catgeory: "sport",
-    title: "More than billion football fans attend Brazil world cup",
+    title: "Journalist Hosein Naderi revealed to have died in the bombing at Mazar-e-Sharif press event",
     authorName: "alex",
     authorImg: "../images/author.jpg",
-    time: "12 Aug - 2022",
+    time: "4 April - 2023",
     desc: [
       {
         para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
@@ -71,12 +71,12 @@ export const hero = [
   },
   {
     id: 3,
-    cover: "../images/hero/hero3.jpg",
+    cover: "../images/hero/JofTheY.jpg",
     catgeory: "fashion",
-    title: "No escaping new high tech speed cameras",
+    title: "Journalists of the Year Awards Winners",
     authorName: "rina",
     authorImg: "../images/author.jpg",
-    time: "22 Mar - 2022",
+    time: "18 April - 2023",
     desc: [
       {
         para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",
@@ -106,12 +106,12 @@ export const hero = [
   },
   {
     id: 4,
-    cover: "../images/hero/hero4.jpg",
+    cover: "../images/hero/JRBaghalan.jpg",
     catgeory: "technology",
-    title: "Emma Watson stands up for Turkish women",
+    title: "PAIFJ calls for the release of three journalists held in Baghalan",
     authorName: "sunil",
     authorImg: "../images/author.jpg",
-    time: "08 Dec - 2022",
+    time: "18 April - 2023",
     desc: [
       {
         para1: "You audience. Least, the recently his repeat the this avarice for the have and was on would before the concise bedding were hall politely name be regretting have of even five of it the his are there again. Word seven designer far lady problem will have work with you to fully understand your business to achieve.",

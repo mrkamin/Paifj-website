@@ -5,6 +5,7 @@ import Footer from "./components/common/footer/Footer"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Homepages from "./components/home/Homepages";
 import GetInformed from "./components/culture/GetInformed"
+import SinglePage from './components/singlePage/SinglePage';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
       <Route index element={<Homepages />} />
       <Route path="getinformed" element={<GetInformed />} /> 
+      <Route path="singlepage/:id" element={<SinglePage />} /> 
       </Routes>
       <Footer />
     </Router>
