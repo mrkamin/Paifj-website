@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
       <section className='hero'>
-        <div className='container'>
+      
           {items.map((item) => {
             return (
               <>
@@ -17,7 +17,7 @@ const Hero = () => {
               </>
             )
           })}
-        </div>
+       
       </section>
     </>
   )

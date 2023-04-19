@@ -1,0 +1,23 @@
+.cardbox {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardimg {
+    width: 40%;
+    border: none;
+    border-radius: 0.3rem;   
+}
+
+.readmorbtn {
+    width: 100px;
+    height: 35px;
+    border: 0.1px solid rgba(0, 0, 0, 0.199);
+    border-radius: 1rem;
+}
+
+.readmorbtn:hover {
+    border: 0.1px solid rgba(0, 0, 0, 0.616);
+}

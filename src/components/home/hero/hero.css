@@ -1,111 +1,105 @@
-.hero {
-    margin: 30px 0;
-    color: #000000;
-  }
-  .hero a {
-    color: #000000;
-  }
-  .hero .box {
-   position: relative;
-    padding: 30px;
-  }
-  .hero img {
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-   position:absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border: none;
-    border-radius: 0.3rem;
-  }
-  .hero .container {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 9vh);
-    grid-gap: 10px;
-  }
-   .hero .box:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 9;
-  }
- 
-  .hero .box:nth-child(2) {
-    grid-column-start: 5;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 5;
-  } 
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
 
-  .hero .box:nth-child(3) {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 9;
-  }
-  .hero .box:nth-child(4) {
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 9;
-  } 
-  .hero .text h1 {
-    font-weight: 500;
-    margin: 10px 0;
-    font-size: 15px;
-  }
-  .hero .author span {
-    font-size: 14px;
-    margin-right: 20px;
-  } 
-  .hero .text {
-    position:absolute;
-    bottom: 30px;
-  }
-  .hero .box:nth-child(1) h1 {
-    font-size: 28px;
-  }
-  .hero .box:nth-child(1) .category {
-    background-color: crimson;
-  }
-  .hero .box:nth-child(2) .category {
-    background-color: #0b9931;
-  }
-  .hero .box:nth-child(4) .category {
-    background-color: #c78823;
-  }
-  @media screen and (max-width: 768px) {
-    .hero .container {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(40, 6vh);
-      grid-gap: 1px;
+:root {
+  --C-DARK: #303050;
+  --FF: "Lato", sans-serif;
+}
+
+.hero {
+display: grid;
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(20, 6,6vh);
+width: 100%;
+gap: 10px ;
+padding: 32px;
+}
+
+.hero a {
+  color: var(--C-DARK);
+  font-family: var(--FF);
+}
+
+.hero .cardlink:nth-child(1) {
+ display: flex;
+ flex-direction: column;
+ grid-column-start: 1;
+ grid-column-end: 5;
+ grid-row-start: 1;
+ grid-row-end: 20;
+ width: 100%;
+ gap: 10px;
+ padding: 10px;
+}
+
+.hero .cardlink:nth-child(1) img {
+  width: 100%;
+}
+
+.hero .cardlink:nth-child(2) {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.hero .cardlink:nth-child(2) button {
+  display: none;
+}
+
+.hero .cardlink:nth-child(3) {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 13;
+  grid-row-end: 16;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.hero .cardlink:nth-child(3) button {
+  display: none;
+}
+
+.hero .cardlink:nth-child(4) {
+  display: flex;
+  grid-column-start: 5;
+  grid-column-end: 12;
+  grid-row-start: 17;
+  grid-row-end: 20;
+  width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+}
+.hero .cardlink:nth-child(4) button {
+  display: none;
+}
+
+.cardlink {
+align-items: center;
+  
+}
+
+@media  screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
     }
-    .hero .box:nth-child(1) {
-      grid-column-start: 1;
-      grid-column-end: 9;
-      grid-row-start: 1;
-      grid-row-end: 20;
+ 
+    .cardlink {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .hero .box:nth-child(2) {
-      grid-column-start: 1;
-      grid-column-end: 9;
-      grid-row-start: 20;
-      grid-row-end: 28;
+
+    .cardlink img {
+      width: 100%;
     }
-    .hero .box:nth-child(3) {
-      grid-column-start: 1;
-      grid-column-end: 9;
-      grid-row-start: 28;
-      grid-row-end: 34;
-    }
-    .hero .box:nth-child(4) {
-      grid-column-start: 1;
-      grid-column-end: 9;
-      grid-row-start: 34;
-      grid-row-end: 40;
-    }
-  }
+}
