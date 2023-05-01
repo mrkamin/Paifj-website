@@ -3,7 +3,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [navMe, setNavMe] = useState(false);
   const options = ["EN", "PR", "PA"];
 
   return (
@@ -11,7 +11,7 @@ const Header = () => {
       <nav>
         <img src="../images/logo.png" alt="" className="logo" />
         <div
-          className={navbar ? "navbar" : "navMe"}
+          className={navMe ? "navMe" : "navbar"} onClick={() => setNavMe(false)}
         >
           
             <ul className="navContainer">
@@ -50,15 +50,15 @@ const Header = () => {
             ))}
           </select>
         </div>
-        <div onClick={() => setNavbar(!navbar)}>
-          {navbar ? (
-            <button className="humberger">
+        <div onClick={() => setNavMe(!navMe)} >
+          {navMe ? (
+            <button className="xHumberger">
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
             </button>
           ) : (
-            <button className="xHumberger">
+            <button className="humberger">
               <span className="bar"></span>
               <span className="bar"></span>
               <span className="bar"></span>
