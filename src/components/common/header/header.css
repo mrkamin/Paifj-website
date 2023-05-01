@@ -43,16 +43,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 0 60px;
   border-bottom: 1px solid var(--C-DARK);
-}
-
-.navContainer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  padding: 32px;
 }
 
 .logo {
@@ -60,10 +53,16 @@ nav {
   transition: 0.5s ease-in-out;
 }
 
+
+.navContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  gap: 20px;
   align-items: center;
 }
 
@@ -76,6 +75,7 @@ nav {
   color: var(--C-DARK);
   text-decoration: none;
   transition: 0.5s ease-in-out;
+  font-size: medium;
 }
 
 .navLink:hover {
@@ -117,10 +117,26 @@ nav {
   background-color: var(--C-BRAND);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1124px) {
+ 
+ nav {
+  padding: 5px;
+ }
+
+  .navContainer {
+    padding: 0;
+  }
+  .navLink {
+    font-size: small;
+  }
+}
+
+@media (max-width: 900px) {
   nav {
+    padding: 0 20px;
     align-items: center;
   }
+ 
   .navbar {
     display: none;
   }
@@ -154,7 +170,7 @@ nav {
   }
 
   .navMe {
-    background-color: rgba(255, 255, 255, 0.89);
+    background-color: rgba(255, 255, 255, 0.925);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -168,11 +184,13 @@ nav {
     justify-content: center;
   }
   .navContainer {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
     gap: 16px;
     top: 200px;
+  }
+  .navLink {
+    font-size: medium;
   }
 }
