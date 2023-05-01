@@ -11,31 +11,31 @@ const Header = () => {
       <nav>
         <img src="../images/logo.png" alt="" className="logo" />
         <div
-          className={navMe ? "navMe" : "navbar"} onClick={() => setNavMe(false)}
+          className={navMe ? "navMe" : "navbar"} 
         >
           
             <ul className="navContainer">
-              <li>
+              <li onClick={() => setNavMe(false)}>
                 <Link className="navLink" to="/getinformed">
                   GET INFORMED
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setNavMe(false)}>
                 <Link className="navLink" to="/ouractions">
                   OUR ACTIONS
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setNavMe(false)}>
                 <Link className="navLink" to="/getinvolved">
                   GET INVOLVED
                 </Link>
               </li>
-              <li>
+              <li onClick={() => setNavMe(false)}>
                 <Link className="navLink" to="/aboutus">
                   ABOUT US
                 </Link>
               </li>
-              <li className="makeDonation">
+              <li className="makeDonation" onClick={() => setNavMe(false)}>
                 <Link className="mDoLink" to="/">
                   MAKE A DONATION
                 </Link>
@@ -44,7 +44,7 @@ const Header = () => {
           
           <select className="dropdownlist">
             {options.map((option) => (
-              <option value={option} key={option}>
+              <option value={option} key={option} >
                 {option}
               </option>
             ))}
