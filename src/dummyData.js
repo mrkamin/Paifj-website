@@ -3,7 +3,7 @@ export const hero = [
     id: 1,
     cover: "../images/hero/heor1.png",
     catgeory: "featured",
-    title: "“What it’s like to be a journalist in the Sahel” – PAIFJ report on threats to journalism in this Afghanistan and Pakistna region",
+    title: "“What it’s like to be a journalist in the Sahel” – PAIFJ report on threats to journalism in this Afghanistan and Pakistna region...",
     authorName: "Mohammad Rafi Amin",
     authorImg: "../images/author.jpg",
     time: "4 April - 2023",
