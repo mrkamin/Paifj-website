@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faFacebook, } from "@fortawesome/free-brands-svg-icons";
+
 
 const Header = () => {
   const [navMe, setNavMe] = useState(false);
@@ -49,6 +52,15 @@ const Header = () => {
               </option>
             ))}
           </select>
+          
+  <li className="social-icon-li">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+    </a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faTwitter} className="social-icon" />
+    </a>
+  </li>
         </div>
         <div onClick={() => setNavMe(!navMe)} >
           {navMe ? (

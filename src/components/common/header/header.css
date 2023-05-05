@@ -117,6 +117,21 @@ nav {
   background-color: var(--C-BRAND);
 }
 
+.social-icon-li {
+  list-style: none;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #303050;
+}
+
+.social-icon:hover {
+  color: var(--C-BRAND);
+}
 @media (max-width: 1124px) {
  
  nav {
@@ -192,5 +207,8 @@ nav {
   }
   .navLink {
     font-size: medium;
+  }
+  .social-icon-li {
+    justify-content: flex-start;
   }
 }
