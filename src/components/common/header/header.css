@@ -127,6 +127,8 @@ nav {
 
 .social-icon {
   color: #303050;
+  transition: 0.5s ease-in-out;
+  height: 30px;
 }
 
 .social-icon:hover {

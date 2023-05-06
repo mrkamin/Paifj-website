@@ -54,10 +54,10 @@ const Header = () => {
           </select>
           
   <li className="social-icon-li">
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/PAIFJ2023/" target="_blank" rel="noopener noreferrer" onClick={() => setNavMe(false)}>
       <FontAwesomeIcon icon={faFacebook} className="social-icon" />
     </a>
-    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://twitter.com/paifj2023" target="_blank" rel="noopener noreferrer" onClick={() => setNavMe(false)}>
       <FontAwesomeIcon icon={faTwitter} className="social-icon" />
     </a>
   </li>
