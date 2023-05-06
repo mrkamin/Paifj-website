@@ -12,6 +12,7 @@
   --C-RED: rgb(255, 0, 0);
   --C-BRAND-RGB: 248, 54, 145;
   --C-DARK: #303050;
+  --C-Dark-transparant: #3030502d;
   --C-BODY: #636383;
   --C-LIGHT: #f6f6f6;
   --C-BLUE: rgb(54, 153, 195);
@@ -43,14 +44,15 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 60px;
-  border-bottom: 1px solid var(--C-DARK);
+  padding: 20px 60px;
+  border-bottom: 1px solid var(--C-Dark-transparant);
   align-items: center;
 }
 
 .logo {
-  width: 200px;
+  width: 120px;
   transition: 0.5s ease-in-out;
+  height: 60px;
 }
 
 

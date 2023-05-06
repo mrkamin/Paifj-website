@@ -2,6 +2,7 @@
 
 :root {
   --C-DARK: #303050;
+  --C-DARK-TRANSPARANT: #3030502d;
   --FF: "Lato", sans-serif;
 }
 
@@ -12,6 +13,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  border-left: 1px solid var(--C-DARK-TRANSPARANT);
+  margin-left: 40px;
 }
 p,
 h1,
